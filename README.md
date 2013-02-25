@@ -16,7 +16,7 @@ SampleCode
 	PayPal.makeRequest( paypalRequest , true );
 DOCUMENTATION
 -------------
-Comming Soon ...
+Coming Soon ...
 
 LICENSE
 -------
