@@ -3,12 +3,27 @@
 	import flash.net.URLRequestMethod;
 	import flash.net.URLRequest;
 	import flash.net.URLVariables;
-
+	
+	/**
+	* PayPalRequest used to build paypal api request
+	* @author Khaled Garbaya khaledgarbaya@gmail.com
+	*/
 	public class PayPalRequest
 	{
+		/**
+		* paypal production api url
+		**/
 		public static var API_URL:String = "https://www.paypal.com/cgi-bin/webscr";
+		/**
+		* paypal sandbox api url
+		**/
 		public static var SANDBOX_API_URL:String = "https://www.sandbox.paypal.com/cgi-bin/webscr";
+		
+		/**
+		* the request method to use when send data
+		**/
 		public static var API_METHOD:String = URLRequestMethod.POST;
+		
 		
 		private var _cmd:String;
 		private var _business:String;
@@ -18,6 +33,17 @@
 		private var _amount:String;
 		private var _success_return_uri:String;
 		private var _cancel_return_uri:String;
+		/**
+		* create Paypal request
+		* @param cmd
+		* @param business
+		* @param lc
+		* @param item_name
+		* @param item_number
+		* @param amount
+		* @param success_return_uri
+		* @param cancel_return_uri
+		*/
 		public function PayPalRequest( cmd:String, business:String, lc:String, item_name:String,  item_number:String, amount:String, success_return_uri:String, cancel_return_uri:String )
 		{
 			this.cmd       		= cmd;

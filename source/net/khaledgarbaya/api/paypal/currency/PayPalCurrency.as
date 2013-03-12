@@ -1,6 +1,9 @@
 ﻿package net.khaledgarbaya.api.paypal.currency
 {
-
+	/**
+	* PayPalCurrency contains currency used for the paypal requests like euro, US Dollar...
+	* @author Khaled Garbaya khaledgarbaya@gmail.com
+	*/
 	public class PayPalCurrency
 	{
 		public static var USD:String = "USD";
