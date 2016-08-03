@@ -5,6 +5,7 @@ AS3-PayPal-API
 
 SampleCode
 ----------
+```actionscript
 	var paypalRequest:PayPalRequest = new PayPalRequest(PayPalRequestType.DONATION,//donation
 														"your@mail.com",
 														"FR",//OR EN etc...
@@ -14,6 +15,8 @@ SampleCode
 														"http://returnuri.com",
 														"http://cancelreturnrui.com");
 	PayPal.makeRequest( paypalRequest , true );
+```
+
 DOCUMENTATION
 -------------
 Coming Soon ...
