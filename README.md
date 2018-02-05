@@ -7,13 +7,13 @@ SampleCode
 ----------
 ```actionscript
 	var paypalRequest:PayPalRequest = new PayPalRequest(PayPalRequestType.DONATION,//donation
-														"your@mail.com",
-														"FR",//OR EN etc...
-														"Business Name",
-														"1",
-														selectedPrice,//ammount
-														"http://returnuri.com",
-														"http://cancelreturnrui.com");
+              "your@mail.com",
+              "FR",//OR EN etc...
+              "Business Name",
+              "1",													                     selectedPrice,//ammount
+	      "http://returnuri.com",
+	      "http://cancelreturnrui.com");
+	      
 	PayPal.makeRequest( paypalRequest , true );
 ```
 
